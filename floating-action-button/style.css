@@ -1,0 +1,112 @@
+:root {
+  --red : #ea5757;
+  --blue : #55a4e5;
+  --yellow : #f7b24f;
+  --green : #6dbbc0;
+  --white : #f5f5f5;
+  --black : #1a1e23;
+  --purple : #7a61dd;
+  --purple-hover : #5e55d8;
+  --shadow : 5px 5px 10px 5px rgba(0, 0, 0, .2);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+}
+.container {
+  position: relative;
+}
+.check {
+  position: relative;
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--purple);
+  box-shadow: var(--shadow);
+  transition: .2s ease;
+  cursor: pointer;
+  outline: none;
+}
+.check::before {
+  content: '+';
+  position: absolute;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--white);
+  top: 50%;
+  left: 50%;
+  transform: rotate(0) translate(-50%, -50%);
+}
+.check:hover {
+  background-color: var(--purple-hover);
+}
+.check:checked {
+  transform: rotate(45deg) scale(.8);
+}
+.items {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  font-size: 28px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .3s ease;
+  z-index: -1;
+}
+.btn-image {
+  background-color: var(--red);
+  transform: rotate(90deg);
+}
+.btn-camera {
+  background-color: var(--yellow);
+  transform: rotate(90deg);
+}
+.btn-share {
+  background-color: var(--green);
+  transform: rotate(90deg);
+}
+.btn-video {
+  background-color: var(--blue);
+  transform: rotate(90deg);
+}
+.check:checked ~ .items {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  box-shadow: var(--shadow);
+}
+.check:checked ~ .btn-image {
+  left: -100px;
+  transform: rotate(0);
+}
+.check:checked ~ .btn-camera {
+  top: -100px;
+  transform: rotate(0);
+}
+.check:checked ~ .btn-share {
+  top: 100px;
+  transform: rotate(0);
+}
+.check:checked ~ .btn-video {
+  left: 100px;
+  transform: rotate(0);
+}

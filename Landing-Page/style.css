@@ -1,0 +1,129 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #222;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.cta-btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #eee;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.card i {
+    font-size: 2rem;
+    color: #3498db;
+}
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #edf1f4;
+    transition: 0.3s ease-in-out;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    h2 {
+        font-family: 'Rubik Doodle Shadow', cursive;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #ff5733; /* Funky Orange */
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.options a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.toggle-theme {
+    margin-top: 10px;
+    background: #333;
+    color: white;
+}
+
+body.dark-mode {
+    background: #1e1e1e;
+}
+
+body.dark-mode .container {
+    background: #2a2a2a;
+    color: white;
+}
+
+body.dark-mode input {
+    background: #333;
+    color: white;
+    border: 1px solid #444;
+}
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+}
